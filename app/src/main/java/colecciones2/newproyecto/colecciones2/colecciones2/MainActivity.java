@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
         lista = (ListView) findViewById(R.id.list);
         colores = getResources().getStringArray(R.array.colores);
 
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, colores);
+        adapter = new ArrayAdapter<String>(this, R.layout.template_list, R.id.txt, colores);
 
         lista.setAdapter(adapter);
     }
